@@ -1,0 +1,286 @@
+<html>
+<head>
+	<title>drawing1</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+	body{
+		background-color:white;
+		font-size: 20px;
+	}
+
+    .image-responsive{
+        opacity: 0.3;
+        display: block;
+        width: 100%;
+        /*height: auto;*/
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle{
+        /*border-radius: 8px;*/
+        background-color:rgba(255, 255, 255, 0.7);
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top:43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        padding-top: 19%;
+        width: 77%;
+        height: 67%;
+    }
+          
+    .row:hover .image-responsive {
+        color:rgba(192,192,192,0.5);
+        opacity: 0.5;
+    }
+
+    .row:hover .middle {
+        opacity: 1;
+    }
+    .header {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-color:rgb(51, 102, 255);
+        padding: 20px 10px;
+        text-align:center;
+      /*font-size: 50px;*/
+        color: white;
+}   
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("img").mouseover(function(){
+        var img_id = $(this).attr('id');
+         // alert(img_id);
+        var description =['brush painting','natural painting','Zebra painting...','Rainy season','Nightseen','face image','Love painting...','Face painting...','Tortoise image','Lion face paint','Girl painting...','Peacock drawing','tNight seen.....','Art project','Green future','whale fish...','face painting....','Lord budhha','Natural seen.','Flower pot','Lord sankara.....','Mickey mouse','Crayons art','Lord ganpati....']
+        var res= img_id.substr(img_id.length-1,img_id.length);
+        if(!(isNaN(res))){
+            // alert("its a number of 1 digit");
+            res= img_id.substr(img_id.length-2,img_id.length);  
+            if(!(isNaN(res))){
+                res= img_id.substr(img_id.length-2,img_id.length);
+            }
+            else{
+            res = img_id.substr(img_id.length-1,img_id.length);
+           }
+        }
+        
+        var my_desc = description[res-1];
+          // alert(my_desc);
+        var dyn_desc_id = "d"+res;
+         // alert("desc id "+dyn_desc_id);
+        for(var i = 0 ; i < description.length ; i++){
+           // alert("#d"+i);
+            $("#d"+i).removeClass("middle");
+            $("#d"+i).html(" ");
+        }
+            $("#"+dyn_desc_id).addClass("middle");
+        
+            $("#"+dyn_desc_id).html(my_desc);
+        });
+      });
+</script>
+</head>
+<body>
+	  <div class="container-fluid">
+      <div class="header"> 
+       <a href="homepage111.html" class="btn btn-info btn-lg" style="float: left; margin-top: 20px;">
+          <span class="glyphicon glyphicon-home" ></span> 
+        </a>
+       <h1><i><u>DRAWINGS</u></i></h1><br>
+   </div>
+
+    <div class="row" style="margin-top:2%;">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing1.png">
+        <img src="drawing1.png" id="drawing1" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d1">
+        </div>
+        <p>drawing1</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing2.png">
+        <img src="drawing2.png" id="drawing2" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d2">
+        </div><p>drawing2</P>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing3.png">
+        <img src="drawing3.png" id="drawing3" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d3">
+        </div><p>drawing3</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing4.png">
+        <img src="drawing4.png" id="drawing4" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d4">
+        </div><p>drawing4</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing5.png">
+        <img src="drawing5.png" id="drawing5" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d5">
+        </div><p>drawing5</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing6.png">
+        <img src="drawing6.png" id="drawing6" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d6">
+        </div><p>drawing6</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing7.png">
+        <img src="drawing7.png" id="drawing7" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d7">
+        </div><p>drawing7</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing8.png">
+        <img src="drawing8.png" id="drawing8"class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d8">
+        </div><p>drawing8</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing9.png">
+        <img src="drawing9.png" id="drawing9" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d9">
+        </div><p>drawing9</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing10.png">
+        <img src="drawing10.png" id="drawing10" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d10">
+        </div><p>drawing10</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing11.png">
+        <img src="drawing11.png" id="drawing11"class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d11">
+        </div> <p>drawing11</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing12.png">
+        <img src="drawing12.png" id="drawing12"class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d12">
+        </div><p>drawing12</p>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing13.png">
+        <img src="drawing13.png" id="drawin13" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d13">
+        </div><p>drawing13</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing14.png">
+        <img src="drawing14.png" id="drawing14" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d14">
+        </div><p>drawing14</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing15.png">
+        <img src="drawing15.png" id="drawing15" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d15">
+        </div><p>drawing15</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing16.png">
+        <img src="drawing16.png" id="drawing16" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d16">
+        </div><p>drawing16</p>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing17.png">
+        <img src="drawing17.png" id="drawing17" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d17">
+        </div><p>drawing17</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing18.png">
+        <img src="drawing18.png" id="drawing18" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d18">
+        </div><p>drawing18</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing19.png">
+        <img src="drawing19.png" id="drawing19" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d19">
+        </div> <p>drawing19</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing20.png">
+        <img src="drawing20.png" id="drawing20" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d20">
+        </div><p>drawing20</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing21.png">
+        <img src="drawing21.png" id="drawing21" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d21">
+        </div><p>drawing21</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing22.png">
+        <img src="drawing22.png" id="drawing22" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d22">
+        </div><p>drawing22</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="drawing23.png">
+        <img src="drawing23.png" id="drawing23" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d23">
+        </div><p>drawing23</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="drawing24.png">
+        <img src="drawing24.png" id="drawing24" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d24">
+        </div><p>drawing24</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

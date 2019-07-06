@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function myFunction() {
+		  var star=["*","*","*","*","*"];
+		  var text="";
+		  var i;
+		  
+		  for(i = 0; i < star.length; i++){
+		  	if(i === 5){break;}
+           text += star[i];
+         }
+		  for(i = 0; i < star.length; i++){
+		  	if(i === 4){break;}
+            text += star[i];
+        }
+		  for(i = 0; i < star.length; i++){
+		  	if(i === 3){break;}
+            text += star[i] ;
+		  }
+		  for(i = 0; i < star.length; i++){
+		  	if(i === 2){break;}
+            text += star[i] +" ";
+		  }
+		  for(i = 0; i < star.length; i++){
+		  	if(i === 1){break;}
+            text += star[i] ;
+		  }
+          document.getElementById("btn").innerHTML += "<br>" + text;
+		}
+	</script>
+</head>
+<body>
+	<button onclick="myFunction()">click</button>
+	<p id="btn"></p>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Commands		Use
+ls				list
+cd 				go forward change directory
+cd ..           go back

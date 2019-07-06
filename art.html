@@ -1,0 +1,313 @@
+<html>
+<head>
+	<title>Art</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+	body{
+		background-color:white;
+	    font-size: 20px;
+		}
+
+    .image-responsive{
+        opacity: 0.3;
+       
+        display: block;
+        width: 100%;
+        /*height: auto;*/
+        transition: .5s ease;
+        backface-visibility: hidden;
+        }
+
+    .middle{
+        /*border-radius: 8px;*/
+        background-color:rgba(255, 255, 255, 0.7);
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        
+        top:43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        padding-top: 19%;
+        width: 77%;
+        height: 67%;
+        }
+          
+    .row:hover .image-responsive {
+        color:rgba(192,192,192,0.5);
+         
+        opacity: 0.5;
+
+        }
+
+    .row:hover .middle {
+        opacity: 1;
+        }
+
+    /*.text {
+      
+        color: black;
+        font-size: 15px;
+        
+        margin-top:20%;
+        }*/
+    </style>
+    <script>
+    
+    $(document).ready(function(){
+      $("img").mouseover(function(){
+        var img_id = $(this).attr('id');
+        //  alert(img_id);
+        var description =['brush painting','natural painting','Zebra painting...','Rainy season','Nightseen','face image','Love painting...','Face painting...','Tortoise image','Lion face paint','Girl painting...','Peacock drawing','tNight seen.....','Art project','Green future','whale fish...','face painting....','Lord budhha','Natural seen.','Flower pot','Lord sankara.....','Mickey mouse','Crayons art','Lord ganpati....']
+        var res= img_id.substr(img_id.length-1,img_id.length);
+        if(!(isNaN(res))){
+           //  alert("its a number of 1 digit");
+            res= img_id.substr(img_id.length-2,img_id.length);  
+            if(!(isNaN(res))){
+                res= img_id.substr(img_id.length-2,img_id.length);
+            }
+            else{
+            res = img_id.substr(img_id.length-1,img_id.length);
+           }
+        }
+        
+        var my_desc = description[res-1];
+          //alert(my_desc);
+        var dyn_desc_id = "d"+res;
+         // alert("desc id "+dyn_desc_id);
+        for(var i = 0 ; i < description.length ; i++){
+          //  alert("#d"+i);
+            $("#d"+i).removeClass("middle");
+            $("#d"+i).html(" ");
+        }
+            $("#"+dyn_desc_id).addClass("middle");
+        
+            $("#"+dyn_desc_id).html(my_desc);
+        });
+      });
+    </script>
+</head>
+<body>
+	
+    <div class="container-fluid bg-3 text-center cont1"> 
+        <a href="homepage.html" class="btn btn-info btn-lg" style="float: left">
+        <span class="glyphicon glyphicon-home" ></span> 
+        </a>
+        <h1><i><u>ART</u></i></h1><br>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art1.png">
+        <img src="art1.png" id="art1"class="img-responsive" style=" width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d1">
+        
+        </div>
+        <p>art1</P>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art2.png">
+        <img src="art2.png" id="art2"class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d2">
+        
+        </div>
+        <p>art2</P>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art3.png">
+        <img src="art3.png" id="art3"class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d3">
+        
+        </div><p>art3</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art4.png">
+        <img src="art4.png" id="art4"class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d4">
+        
+        </div><p>art4</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art5.png">
+        <img src="art5.png" id="art5"class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d5">
+        
+        </div><p>art5</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art6.png">
+        <img src="art6.png" id="art6" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d6">
+        
+        </div><p>art6</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art7.png">
+        <img src="art7.png" id="art7"class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d7">
+        
+        </div><p>art7</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art8.png">
+        <img src="art8.png" id="art8"class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d8">
+        
+        </div><p>art8</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art9.png">
+        <img src="art9.png" id="art9" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d9">
+        
+        </div><p>art9</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art10.png">
+        <img src="art10.png" id="art10" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d10">
+        
+        </div><p>art10</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art11.png">
+        <img src="art11.png" id="art11" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d11">
+        
+        </div><p>art11</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art12.png">
+        <img src="art12.png" id="art12" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d12">
+        
+        </div><p>art12</p>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art13.png">
+        <img src="art13.png" id="art13" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d13">
+        
+        </div><p>art13</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art14.png">
+        <img src="art14.png" id="art14" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d14">
+        
+        </div><p>art14</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art15.png">
+        <img src="art15.png" id="art15" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d15">
+        
+        </div><p>art15</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art16.png">
+        <img src="art16.png" id="art16" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d16">
+        
+        </div><p>art16</p>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art17.png">
+        <img src="art17.png" id="art17" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d17">
+        
+        </div><p>art17</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art18.png">
+        <img src="art18.png" id="art18" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d18">
+        
+        </div><p>art18</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art19.png">
+        <img src="art19.png" id="art19"class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d19">
+        
+        </div><p>artt19</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art20.png">
+        <img src="art20.png" id="art20" class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d20">
+        
+        </div><p>art20</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art21.png">
+        <img src="art21.png" id="art21" class="img-responsive" style="width:100%; height: 200px;" alt="Image">
+        <div class="middle" id="d21">
+        
+        </div><p>art21</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art22.png">
+        <img src="art22.png" id="art22" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+        <div class="middle" id="d22">
+        
+        </div><p>art22</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="art23.png">
+        <img src="art23.png" id="art23" class="img-responsive" style="width:100%; height:200px;"alt="Image">
+        <div class="middle" id="d23">
+        
+        </div><p>art23</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="art24.png">
+        <img src="art24.png" id="art24"class="img-responsive" style="width:100%; height:200px;"  alt="Image">
+        <div class="middle" id="d24">
+        
+        </div><p>art24</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

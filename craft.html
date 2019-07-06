@@ -1,0 +1,323 @@
+<html>
+<head>
+	<title>craft</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+	body{
+		   background-color: #ffffe6;
+		   font-size: 20px;
+		}
+		.image-responsive{
+           opacity: 1;
+           display: block;
+           width: 100%;
+           height: auto;
+           transition: .5s ease;
+           backface-visibility: hidden;
+        }
+        .middle {
+            border-radius: 8px;
+        background-color:rgba(0,0,0,0.5);
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 76%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        }
+
+        .row:hover .image-responsive {
+            opacity: 0.3;
+        }
+
+        .row:hover .middle {
+            opacity: 1;
+        }
+        .text {
+           color: white;
+        font-size: 15px;
+        width: 100%;
+        padding: 8px 8px;
+    }
+</style>
+<script>
+	$(document).ready(function(){
+      $("img").mouseover(function(){
+        var img_id = $(this).attr('id');
+        //  alert(img_id);
+        var description =['craft material','chrismas tree with sticks','independence special','diwali craft','creative craft purse','paper flower pot','tools of crafts','tools of crafts','paper making tree','hanging paper craft','paper flower pot','quiling craft','quiling joker','making fish in cd','decoration item','flower by paper','duck by folk','paper basket','pot decoration','Flower pot','Lord sankara.....','Mickey mouse','Crayons art','Lord ganpati....']
+        var res= img_id.substr(img_id.length-1,img_id.length);
+        if(!(isNaN(res))){
+           //  alert("its a number of 1 digit");
+            res= img_id.substr(img_id.length-2,img_id.length);  
+            if(!(isNaN(res))){
+                res= img_id.substr(img_id.length-2,img_id.length);
+            }
+            else{
+            res = img_id.substr(img_id.length-1,img_id.length);
+           }
+        }
+        
+        var my_desc = description[res-1];
+          //alert(my_desc);
+        var dyn_desc_id = "d"+res;
+         // alert("desc id "+dyn_desc_id);
+        for(var i = 0 ; i < description.length ; i++){
+          //  alert("#d"+i);
+            $("#d"+i).removeClass("text");
+            $("#d"+i).html(" ");
+        }
+            $("#"+dyn_desc_id).addClass("text");
+        
+            $("#"+dyn_desc_id).html(my_desc);
+        });
+      });
+</script>
+</head>
+<body>
+	
+	  <div class="container-fluid bg-3 text-center"> 
+       <a href="homepage.html" class="btn btn-info btn-lg" style="float: left">
+          <span class="glyphicon glyphicon-home" ></span> 
+        </a>
+       <h1><i><u>CRAFTS</u></i></h1><br>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft1.png">
+        <img src="craft1.png" id="craft1"class="img-responsive" style="width:100%; height: 200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d1">
+        </div>
+        </div><p>craft1</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft2.png">
+        <img src="craft2.png" id="craft2" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d2">
+        </div>
+        </div><p>craft2</P>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft3.png">
+        <img src="craft3.png" id="craft3" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"alt="Image">
+        <div class="middle">
+        <div id="d3">
+        </div>
+        </div><p>craft3</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft4.png">
+        <img src="craft4.png" id="craft4" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"  alt="Image">
+        <div class="middle">
+        <div id="d4">
+        </div>
+        </div><p>craft4</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft5.png">
+        <img src="craft5.png" id="craft5"class="img-responsive" style="width:100%; height: 200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d5">
+        </div>
+        </div><p>craft5</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft6.png">
+        <img src="craft6.png" id="craft6" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d6">
+        </div>
+        </div><p>craft6</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft7.png">
+        <img src="craft7.png"  id="craft7" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"alt="Image">
+        <div class="middle">
+        <div id="d7">
+        </div>
+        </div><p>craft7</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft8.png">
+        <img src="craft8.png" id="craft8" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"  alt="Image">
+        <div class="middle">
+        <div id="d8">tools of crafts
+        </div>
+        </div><p>craft8</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft9.png">
+        <img src="craft9.png" id="craft9"class="img-responsive" style="width:100%; height: 200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d9">chrismas tree with sticks
+        </div>
+        </div><p>craft9</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft10.png">
+        <img src="craft10.png" id="craft10" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d10">
+        </div>
+        </div><p>craft10</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft11.png">
+        <img src="craft11.png" id="craft11"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"alt="Image">
+        <div class="middle">
+        <div id="d11">
+        </div>
+        </div><p>craft11</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft12.png">
+        <img src="craft12.png" id="craft12" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"  alt="Image">
+        <div class="middle">
+        <div id="d12">
+        </div>
+        </div><p>craft12</p>
+        </div>
+        </div>    
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft13.png">
+        <img src="craft13.png" id="craft13" class="img-responsive" style="width:100%; height: 200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d13">
+        </div>
+        </div><p>craft13</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft14.png">
+        <img src="craft14.png" id="craft14"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d14">
+        </div>
+        </div><p>craft14</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft15.png">
+        <img src="craft15.png" id="craft15"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"alt="Image">
+        <div class="middle">
+        <div id="d15">
+        </div>
+        </div><p>craft15</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft16.png">
+        <img src="craft16.png" id="craft16"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"  alt="Image">
+        <div class="middle">
+        <div id="d16">
+        </div>
+        </div><p>craft16</p>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft17.png">
+        <img src="craft17.png" id="craft17"class="img-responsive" style="width:100%; height: 200px; border-radius: 10px;" alt="Image">
+       <div class="middle">
+        <div id="d17">
+        </div>
+        </div> <p>craft17</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft18.png">
+        <img src="craft18.png" id="craft18"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d18">
+        </div>
+        </div><p>craft18</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft19.png">
+        <img src="craft19.png" id="craft19"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"alt="Image">
+        <div class="middle">
+        <div id="d19">
+        </div>
+        </div><p>craft19</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft20.png">
+        <img src="craft20.png" id="craft20" class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"  alt="Image">
+        <div class="middle">
+        <div id="d20">
+        </div>
+        </div><p>craft20</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft21.png">
+        <img src="craft21.png" id="craft21"class="img-responsive" style="width:100%; height: 200px; border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d21">
+        </div>
+        </div><p>craft21</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft22.png">
+        <img src="craft22.png" id="craft22"class="img-responsive" style="width:100%; height:200px;border-radius: 10px;" alt="Image">
+        <div class="middle">
+        <div id="d22">
+        </div>
+        </div><p>craft22</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"> 
+        <a target="_self"  href="craft23.png">
+        <img src="craft23.png" id="craft23"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"alt="Image">
+        <div class="middle">
+        <div id="d23">
+        </div>
+        </div><p>craft23</p>
+        </div>
+
+        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+        <a target="_self"  href="craft24.png">
+        <img src="craft24.png" id="craft24"class="img-responsive" style="width:100%; height:200px; border-radius: 10px;"  alt="Image">
+        <div class="middle">
+        <div id="d24">
+        </div>
+        </div><p>craft24</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
