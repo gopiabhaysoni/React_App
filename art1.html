@@ -1,13 +1,32 @@
 <html>
 <head>
 	<title>Art1</title>
-	<meta charset="utf-8">
+	<!-- <meta charset="utf-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+  <!-- <link src=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel="stylesheet"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   -->
+
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <style>
+<style>
         .container-fluid{
           background-repeat: no-repeat;
           background-size: cover; 
@@ -15,12 +34,12 @@
         .navbar-header{
           width: 100%;
         }
-	    body{
-		  background-color:white;
-	      font-size: 20px;
-	    }
+	      body{
+		      background-color:white;
+	        font-size: 20px;
+	      }
         span{
-         padding-top: 10px;
+          padding-top: 10px;
         }
         .header {
           overflow: hidden;
@@ -64,108 +83,108 @@
           backface-visibility: hidden;
         }
         p{
-            text-align: center;
+          text-align: center;
         }
         .middle{
         /*border-radius: 8px;*/
-        background-color:rgba(255, 255, 255, 0.7);
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top:43%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        padding-top: 19%;
-        width: 77%;
-        height: 67%;
-    }
-    @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-      .header-right {
-    float: none;
-  }
-}    
-    .row:hover .image-responsive {
-        color:rgba(192,192,192,0.5);
-        opacity: 0.5;
-    }
+          background-color:rgba(255, 255, 255, 0.7);
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top:43%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+          padding-top: 19%;
+          width: 77%;
+          height: 67%;
+        }
+        @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+        }    
+        .row:hover .image-responsive {
+          color:rgba(192,192,192,0.5);
+          opacity: 0.5;
+        }
+        .row:hover .middle {
+          opacity: 1;
+        }
+        .header {
+          width: 100%;
+          height: 100px;
+          overflow: hidden;
+          background-color:rgb(51, 102, 255);
+          padding: 20px 10px;
+          text-align:center;
+          /*font-size: 50px;*/
+          color: white;
+        } 
+        .modal-header, h4, .close {
+          background-color: #f9f9f9;
+          color: black !important;
+          text-align: center;
+          font-size: 10px;
+        }
+        .modal-footer {
+          background-color: #f9f9f9;
+        }
+        .btn{
+          background: #a64bf4;
+          background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+          background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+          background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+          background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+        }   
+  </style>
 
-    .row:hover .middle {
-        opacity: 1;
-    }
-     .header {
-        width: 100%;
-        height: 100px;
-        overflow: hidden;
-        background-color:rgb(51, 102, 255);
-        padding: 20px 10px;
-        text-align:center;
-      /*font-size: 50px;*/
-        color: white;
-} 
-.modal-header, h4, .close {
-    background-color: #f9f9f9;
-    color: black !important;
-    text-align: center;
-    font-size: 10px;
-  }
-  .modal-footer {
-    background-color: #f9f9f9;
-  }
-   
-   .btn{
-    background: #a64bf4;
-        background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-        background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-        background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-        background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-    
-   }   
-    
-    </style>
-    <script>
-    
+  <script>
     $(document).ready(function(){
       $("img").mouseover(function(){
         var img_id = $(this).attr('id');
         //  alert(img_id);
         var description =['brush painting','natural painting','Zebra painting...','Rainy season','Nightseen','face image','Love painting...','Face painting...','Tortoise image','Lion face paint','Girl painting...','Peacock drawing','tNight seen.....','Art project','Green future','whale fish...','face painting....','Lord budhha','Natural seen.','Flower pot','Lord sankara.....','Mickey mouse','Crayons art','Lord ganpati....']
         var res= img_id.substr(img_id.length-1,img_id.length);
-        if(!(isNaN(res))){
+          if(!(isNaN(res))){
            //  alert("its a number of 1 digit");
             res= img_id.substr(img_id.length-2,img_id.length);  
-            if(!(isNaN(res))){
-                res= img_id.substr(img_id.length-2,img_id.length);
-            }
-            else{
+          if(!(isNaN(res))){
+            res= img_id.substr(img_id.length-2,img_id.length);
+          }
+          else{
             res = img_id.substr(img_id.length-1,img_id.length);
-           }
-        }
+          }
+          }
         
         var my_desc = description[res-1];
           //alert(my_desc);
         var dyn_desc_id = "d"+res;
          // alert("desc id "+dyn_desc_id);
-        for(var i = 0 ; i < description.length ; i++){
+          for(var i = 0 ; i < description.length ; i++){
           //  alert("#d"+i);
             $("#d"+i).removeClass("middle");
             $("#d"+i).html(" ");
-        }
+          }
             $("#"+dyn_desc_id).addClass("middle");
         
             $("#"+dyn_desc_id).html(my_desc);
-        });
-      });
-     $(document).ready(function(){
-      $("#myBtn").click(function(){
-    $("#myModal").modal();
-  });
+            });
+          });
+
+          // $(document).ready(function(){
+          //   $("#myBtn").click(function(){
+          //      $("#myModal").modal();
+          //   });
+          // });
+          $(function(){
+  $("#header").load("header.html"); 
 });
     </script>
 </head>
@@ -180,63 +199,64 @@
     </div>
  -->
  <div class="container-fluid">
-          <div class="row">
-    
+    <div id="header"></div>
+   
+
+    <!-- <div class="row">
         <div class=" navbar-header" class="text-info"> 
           <div class="header">
-            <a href="#" class="logo">Art</a>
-            <div class="header-right">
-            <a href="homepage111.html">
-            <span class="fa fa-home"></span> Home 
-            </a>
-            <a href="#">
-            <span class="fa fa-sign-out"></span> logout
-            </a>
-              
-            <a href="#"  id="myBtn">
-            <span class="fa fa-wrench"></span>change password
-            </a>
+            <a href="#default" class="logo">Melogic Art</a>
+              <div class="header-right">
+                <a href="homepage111.html">
+                  <span class="fa fa-home"></span> Home 
+                </a>
+                <a href="">
+                  <span class="fa fa-sign-out"></span> logout
+                </a>
+                <a href="#"  id="myBtn">
+                  <span class="fa fa-wrench"></span>change password
+                </a>
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
 
-              <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog">
-              <div class="modal-content">
-              <div class="modal-header" style="padding:35px 50px;">
-                <h2><span class="fa fa-wrench"></span> change password</h2>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
+                        <div class="modal-header" style="padding:35px 50px;">
+                          <h2><span class="fa fa-wrench"></span> change password</h2>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
             
-              <div class="modal-body" style="padding:40px 50px;">
-              <form role="form">
-              
-              <div class="form-group">
-                <span class="glyphicon glyphicon-eye-open"> </span>
-                <input type="text" class="form-control" id="psw" placeholder="Enter new password">
-              </div>
-              <div class="form-group">
-                <span class="glyphicon glyphicon-eye-open"></span>
-                <input type="text" class="form-control" id="psw" placeholder="Confirm password">
-              </div>
-              <div class="text" style="color:#0000FF;">
-               <input type="checkbox" value="" checked>Remember me
-              </div>
-               <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> submit
-               </button>
-               </form>
-              </div>
-              <div class="modal-footer">
-              <button type="submit" class="btn1 btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-               <p>Not a member? <a href="#">Sign Up</a></p>
-               <p>Forgot <a href="#">Password?</a></p>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+                        <div class="modal-body" style="padding:40px 50px;">
+                          <form role="form">
+                            <div class="form-group">
+                              <span class="glyphicon glyphicon-eye-open"> </span>
+                              <input type="text" class="form-control" id="psw" placeholder="Enter new password">
+                            </div>
+                            <div class="form-group">
+                              <span class="glyphicon glyphicon-eye-open"></span>
+                              <input type="text" class="form-control" id="psw" placeholder="Confirm password">
+                            </div>
+                            <div class="text" style="color:#0000FF;">
+                              <input type="checkbox" value="" checked>Remember me
+                            </div>
+                              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> submit
+                              </button>
+                          </form>
+                        </div>
 
+                        <div class="modal-footer">
+                             <button type="submit" class="btn1 btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                             <p>Not a member? <a href="#">Sign Up</a></p>
+                             <p>Forgot <a href="#">Password?</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
         </div>
-        </div>
-        </div>
-      
+      </div>
+    </div> -->
     
     <div class="row" style="margin-top:2%;">
         <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">

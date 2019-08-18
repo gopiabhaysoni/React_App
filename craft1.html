@@ -85,17 +85,23 @@
             $("#"+dyn_desc_id).html(my_desc);
         });
       });
+
+    $(function(){
+  $("#header").load("header.html"); 
+});
 </script>
 </head>
 <body>
 	
-	  <div class="container-fluid bg-3 text-center"> 
-      <div class="header"> 
+	  <div class="container-fluid bg-3 text-center">
+    <div id="header"></div>
+       
+      <!-- <div class="header"> 
        <a href="homepage111.html" class="btn btn-info btn-lg" style="float: left; margin-top: 20px;">
           <span class="glyphicon glyphicon-home" ></span> 
        </a>
        <h1><i><u>CRAFTS</u></i></h1><br>
-   </div>
+   </div> -->
 
     <div class="row" style="margin-top:2%;">
         <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
